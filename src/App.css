@@ -1,0 +1,111 @@
+.app {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+}
+
+.breadcrumb {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.booking-section {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.booking-section:first-child {
+  border: 1px solid black;
+  width: 60%;
+}
+
+.booking-section:nth-child(2) {
+  margin-left: -1rem;
+}
+
+.section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.book-button-container {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.book-button {
+  background-color: #1B406F;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 5px;
+}
+
+.book-button:hover {
+  background-color: #1e3a8a;
+}
+
+.book-button:active {
+  transform: scale(0.98);
+}
+
+
