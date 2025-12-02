@@ -170,7 +170,7 @@ export function useBookingController(options = {}) {
 
     setValidationErrors(errors)
     if (Object.keys(errors).length > 0) return
-    // Hvis tidsrummet allerede er optaget, gør vi bare ingenting (ingen ekstra fejlbesked)
+    // Hvis tidsrummet allerede er optaget, gør vi bare ingenting 
     if (bookedTimeSlots.includes(selectedTimeSlot)) return
 
     setShowConfirmDialog(true)
@@ -179,7 +179,6 @@ export function useBookingController(options = {}) {
   // Sender booking til Supabase og opdaterer lokal state
   const handleConfirmBooking = async () => {
     try {
-      // Hvis der opstår race condition hvor slot er blevet optaget imens, stopper vi blot stille
       if (bookedTimeSlots.includes(selectedTimeSlot)) {
         setShowConfirmDialog(false)
         return
@@ -209,13 +208,11 @@ export function useBookingController(options = {}) {
       console.log('Booking created successfully:', data)
     } catch (error) {
       console.error('Unexpected error:', error)
-      // Ingen bruger-fejlmeddelelse; kun log i konsollen
     }
   }
 
   // Viser delete-dialog når admin klikker på et optaget tidsrum
   const handleRequestDeleteBooking = (slot) => {
-    // Hvis der ikke er valgt lokale, gør vi ikke noget (ingen fejlmeddelelse)
     if (!selectedRoom) return
     setDeleteTargetSlot(slot)
     setShowDeleteDialog(true)
