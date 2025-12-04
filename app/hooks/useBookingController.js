@@ -15,7 +15,7 @@ const DEFAULT_TIME_SLOTS = [
   '15:30-16:45', '17:00-18:15', '18:30-19:45', '20:00-21:15', '23:00-00:15'
 ]
 
-// Samler al booking-state, datofetch og Supabase sideeffekter ét sted
+// Samler al booking-state, datofetch og Supabase sideeffekter i et sted
 export function useBookingController(options = {}) {
   const timeSlots = options.timeSlots ?? DEFAULT_TIME_SLOTS
   const [selectedDate, setSelectedDate] = useState(new Date())

@@ -1,3 +1,5 @@
+'use client'
+
 import BookingPage from './BookingPage'
 
 const HALF_HOUR_SLOTS = createHalfHourSlots()
@@ -6,8 +8,8 @@ const TEACHING_HOOK_OPTIONS = { timeSlots: HALF_HOUR_SLOTS }
 export default function TeachingBookingPage() {
   return (
     <BookingPage
-      pageTitle="Book undervisningslokale"
-      breadcrumbText="Dashboard / Book undervisningslokale"
+      pageTitle="Book mødelokale"
+      breadcrumbText="Dashboard / Book mødelokale"
       hookOptions={TEACHING_HOOK_OPTIONS}
       timeSlotColumns={3}
     />

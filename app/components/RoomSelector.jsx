@@ -8,7 +8,7 @@ export default function RoomSelector({ floors, rooms, selectedFloor, selectedRoo
         fontSize: '0.875rem', 
         fontWeight: 600, 
         color: hasError ? '#dc2626' : '#374151', 
-        marginBottom: '0.75rem' 
+        marginBottom: '0.95rem' 
       }}>
         Vælg lokale*
       </h2>
@@ -35,7 +35,7 @@ export default function RoomSelector({ floors, rooms, selectedFloor, selectedRoo
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '0.5rem',
+          gap: '1.25rem',
           backgroundColor: '#d1d5db',
           padding: '0.75rem',
           borderRadius: '4px'

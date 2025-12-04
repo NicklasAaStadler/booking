@@ -1,9 +1,11 @@
+'use client'
+
 import { useState } from 'react'
-import './App.css'
 import BookingPage from './pages/BookingPage'
 import TeachingBookingPage from './pages/TeachingBookingPage'
+import './App.css'
 
-function App() {
+export default function Home() {
   const [activePage, setActivePage] = useState('meeting')
 
   return (
@@ -27,4 +29,3 @@ function App() {
   )
 }
 
-export default App

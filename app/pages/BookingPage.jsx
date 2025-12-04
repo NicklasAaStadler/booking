@@ -1,3 +1,5 @@
+'use client'
+
 // Sidekomponent der binder layout, sektioner og dialoger sammen
 import PropTypes from 'prop-types'
 import BookingHeader from '../layouts/BookingHeader'
@@ -11,7 +13,7 @@ import { useBookingController } from '../hooks/useBookingController'
 
 export default function BookingPage({
   pageTitle = 'Book Undervisningslokale',
-  breadcrumbText = 'Dashboard / Book mødelokale',
+  breadcrumbText = 'Dashboard / Book undervisningslokale',
   hookOptions,
   timeSlotColumns = 2
 }) {
